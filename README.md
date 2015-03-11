@@ -5,7 +5,7 @@
 Database Schema for SPDX 2.0
 
 <h3>Requirements</h3>
-* [mysql](www.mysql.com) 
+* <a href="http://www.mysql.com/">[mysql]
 
 
 
