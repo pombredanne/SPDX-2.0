@@ -48,7 +48,7 @@ CREATE TABLE spdx_package_info (
 
 
 CREATE TABLE spdx_file_info (
-    	file_info_pk		bigserial,  -- Primary Key
+    	file_info_pk		integer,  -- Primary Key
 	fspdx_id		text NOT NULL,
     	filename		text,
     	filetype		text,
@@ -114,7 +114,7 @@ CREATE TABLE IF NOT EXISTS `relationship` (
   `spdx_id1` int(11) NOT NULL,
   `spdx_id2` int(11) NOT NULL,
   `relationship_id` int(11) NOT NULL,
-  `spdx_fk` int(11) NOT NULL
+  `spdx_fk` int(11) NOT NULL,
 CONSTRAINT spdx_package_info_pk PRIMARY KEY (spdx_fk)
 ) ;
 
